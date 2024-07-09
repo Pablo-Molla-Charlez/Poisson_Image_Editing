@@ -1,6 +1,13 @@
 # Poisson Image Editing
 
-This is a Python implementation of the [poisson image editing](https://www.cs.virginia.edu/~connelly/class/2014/comp_photo/proj2/poisson.pdf) paper to seamlessly blend two images, performed by user PPPW. My personal contributions refer to the application of such method into the IAD (Industrial Anomaly Detection) field, in particular, using the technique to data augment the number of current samples in the AeBAD (Aero-engine Blade Anomaly Detection Dataset) Dataset. 
+This is a Python implementation of the [Poisson Image Editing]([https://www.cs.virginia.edu/~connelly/class/2014/comp_photo/proj2/poisson.pdf](https://github.com/Pablo-Molla-Charlez/Poisson_Image_Editing/blob/master/Poisson_Image_Editing_Paper.pdf)) paper to seamlessly blend two images, performed by user PPPW. 
+
+My personal contributions refer to the application of such method into the IAD (Industrial Anomaly Detection) field, in particular, using the technique to apply data augmentation to the MVTec Anomaly Dataset in order to improve the learning capabilities of the model [AnomalyGPT]([https://github.com/Pablo-Molla-Charlez/AnomalyGPT])). MVTec AD is a dataset for benchmarking anomaly detection methods with a focus on industrial inspection. It contains over 5000 high-resolution images divided into 15 different object and texture categories. Each category comprises a set of defect-free training images and a test set of images with various kinds of defects as well as images without defects.
+
+<div align="center">
+	<img src="figs/example1/MVTec-AD.png.png">
+</div>
+
 
 ![](figs/example1/Poisson_Editing_Example_Hazelnut.png)
 
