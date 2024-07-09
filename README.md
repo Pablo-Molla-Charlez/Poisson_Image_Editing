@@ -5,7 +5,7 @@ This is a Python implementation of the [Poisson Image Editing]([https://www.cs.v
 My personal contributions refer to the application of such method into the IAD (Industrial Anomaly Detection) field, in particular, using the technique to apply data augmentation to the MVTec Anomaly Dataset in order to improve the learning capabilities of the model [AnomalyGPT]([https://github.com/Pablo-Molla-Charlez/AnomalyGPT])). MVTec AD is a dataset for benchmarking anomaly detection methods with a focus on industrial inspection. It contains over 5000 high-resolution images divided into 15 different object and texture categories. Each category comprises a set of defect-free training images and a test set of images with various kinds of defects as well as images without defects.
 
 <div align="center">
-	<img src="figs/example1/MVTec-AD.png.png">
+	![]("figs/example1/MVTec-AD.png.png")
 </div>
 
 
