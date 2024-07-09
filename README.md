@@ -1,35 +1,13 @@
 # Poisson Image Editing
 
-This is a Python implementation of the [poisson image editing](https://www.cs.virginia.edu/~connelly/class/2014/comp_photo/proj2/poisson.pdf) paper to seamlessly blend two images. 
+This is a Python implementation of the [poisson image editing](https://www.cs.virginia.edu/~connelly/class/2014/comp_photo/proj2/poisson.pdf) paper to seamlessly blend two images, performed by user PPPW. My personal contributions refer to the application of such method into the IAD (Industrial Anomaly Detection) field, in particular, using the technique to data augment the number of current samples in the AeBAD (Aero-engine Blade Anomaly Detection Dataset) Dataset. 
 
-![](figs/example1/all.png)
+![](figs/example1/Poisson_Editing_Example_Hazelnut.png)
 
-For example, I'd like to put the Statue of Liberty under the shinning ocean. The right side compares the results from direct copying and the Poisson image editing. 
-
-In this [notebook](https://github.com/PPPW/poisson-image-editing/tree/master/poisson_image_editing.ipynb), I build the algorithm from scratch and explain each steps in detail. The code used in the notebook is extracted in the `*.py` files, you can also run it directly (see the next section for more instructions about how to run). 
-
-## How to run
-
-```
-python main.py -s <source image> -t <target image> [-m <mask image>]
-```
-
-If the mask image is not specified, a window will pop up for you to draw the mask on the source image:
-
-![](figs/demo/draw_mask.png)
-
-The green region will be used as the mask. Press `s` to save the result, press `r` to reset. 
-
-After the mask is defined, a window will pop up for you to adjust the mask position on the target image: 
-
-![](figs/demo/move_mask.png)
-
-The mask corresponds to the region of source image that will be copied, you can move the mask to put the copied part into desired location in the target image. Press `s` to save the result, press `r` to reset. 
-
-Then the Poisson image editing process will start. The blended image will be named as `target_result.png`, in the same directory as the source image. 
+For example, in order to create more realistic and elaborated anomaly images given the original mask (label), the original anomalous image and a non-anomalous image in which we want to integrate the anomaly. Then the Poisson image editing process will start and the images named as `new_anomaly_mask_000.png` (ground_truth image) and `new_anomaly_000.png` (new anomalous image), are saved in the corresponding directory as specified in the variable `base_dir`. 
 
 
-## Structure
+## Folders and Files within the Repository
 Here's a brief description of each file's functionality:
 
 * `main.py`: take command line argument and call `paint_mask.py`, `move_mask.py` and `poisson_image_editing.py`. 
