@@ -33,6 +33,12 @@ In this second case, we can observe the before/after applying the composition of
   <img src="figs/example1/Poisson_Editing_Example_Improved.png" width="700">
 </p>
 
+In this last example, it is as well applied the technique and the rotation of 270º degrees.
+
+<p align="center">
+  <img src="figs/example1/Poisson_Editing_Example_Metal_Nut.png" width="700">
+</p>
+
 ## Repository Structure
 
 A brief description of each file's functionality:
