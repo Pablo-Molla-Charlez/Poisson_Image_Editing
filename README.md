@@ -2,7 +2,7 @@
 
 This repository contains a Python implementation of the [Poisson Image Editing](https://github.com/Pablo-Molla-Charlez/Poisson_Image_Editing/blob/master/Poisson_Image_Editing_Paper.pdf) paper, which allows for seamless blending of two images. This implementation is provided by user PPPW.
 
-My personal contributions involve applying this method to the field of Industrial Anomaly Detection (IAD). Specifically, I use this technique for data augmentation on the MVTec Anomaly Dataset to enhance the model's learning capabilities in [AnomalyGPT](https://github.com/Pablo-Molla-Charlez/AnomalyGPT). The MVTec AD dataset is designed for benchmarking anomaly detection methods, focusing on industrial inspection. It contains over 5000 high-resolution images across 15 different object and texture categories. Each category includes defect-free training images and a test set with various defects and non-defective images.
+My personal contributions involve applying this method to the field of Industrial Anomaly Detection (IAD). Specifically, I use this technique for data augmentation on the [MVTec Anomaly Dataset](https://www.mvtec.com/company/research/datasets/mvtec-ad) to enhance the model's learning capabilities in [AnomalyGPT](https://github.com/Pablo-Molla-Charlez/AnomalyGPT). The MVTec AD dataset is designed for benchmarking anomaly detection methods, focusing on industrial inspection. It contains over 5000 high-resolution images across 15 different object and texture categories. Each category includes defect-free training images and a test set with various defects and non-defective images.
 
 The MVTec dataset is composed of the following objects:
 
@@ -51,4 +51,5 @@ A brief description of each file's functionality:
 
 * The code was implemented in order to apply in one execution the technique to all the classes at the same time, generating the corresponding couples of samples (mask + anomalous images). The functions `poisson_edit` and `laplacian_matrix` were not modified from the original script from PPPW, however the `main`function was.
 * The parameter `offset` determines where the anomaly will be pasted, therefore, check multiple different configurations to make sure that the new anomalous image includes the anomaly, otherwise it will be coy/pasted on the background of the target image.
+* Further details and scripts can be found on the original [repository](https://github.com/PPPW/poisson-image-editing).
 
