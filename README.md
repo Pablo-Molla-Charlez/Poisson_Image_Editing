@@ -51,5 +51,6 @@ A brief description of each file's functionality:
 
 * The code was implemented in order to apply in one execution the technique to all the classes at the same time, generating the corresponding couples of samples (mask + anomalous images). The functions `poisson_edit` and `laplacian_matrix` were not modified from the original script from PPPW, however the `main`function was.
 * The parameter `offset` determines where the anomaly will be pasted, therefore, check multiple different configurations to make sure that the new anomalous image includes the anomaly, otherwise it will be coy/pasted on the background of the target image.
+* It would be wonderful to determine an autoposition model that is able to localize the object position to make sure that the anomaly pasted using the Poisson technique is always within the object. Sometimes, due to the way the images are taken, the pasted anomalies are found to be outside leading to not useful samples.
 * Further details and scripts can be found on the original [repository](https://github.com/PPPW/poisson-image-editing).
 
