@@ -7,7 +7,7 @@ My personal contributions involve applying this method to the field of Industria
 The MVTec dataset is composed of the following objects:
 
 <p align="center">
-  <img src="figs/example1/MVTec-AD.png" width="700">
+  <img src="figs/MVTec-AD.png" width="700">
 </p>
 
 To create more realistic and detailed anomaly images, the following elements are needed:
@@ -20,23 +20,23 @@ The Poisson image editing process will then generate `new_anomaly_mask_000.png` 
 Let's see some examples. The first example only considers the direct application of the technique, with no further composition of operations.
 
 <p align="center">
-  <img src="figs/example1/Poisson_Editing_Example_Hazelnut.png" width="700">
+  <img src="figs/Poisson_Editing_Example_Hazelnut.png" width="700">
 </p>
 
 In this second case, we can observe the before/after applying the composition of one operation, a rotation of 270º. Bear in mind that, in my case I had to use for the model training (AnomalyGPT) the couple mask + anomaly picture, therefore both images had to follow the same operations.
 
 <p align="center">
-  <img src="figs/example1/Poisson_Editing_Example.png" width="700">
+  <img src="figs/Poisson_Editing_Example.png" width="700">
 </p>
 
 <p align="center">
-  <img src="figs/example1/Poisson_Editing_Example_Improved.png" width="700">
+  <img src="figs/Poisson_Editing_Example_Improved.png" width="700">
 </p>
 
 In this last example, it is as well applied the technique and the rotation of 270º degrees.
 
 <p align="center">
-  <img src="figs/example1/Poisson_Editing_Example_Metal_Nut.png" width="700">
+  <img src="figs/Poisson_Editing_Example_Metal_Nut.png" width="700">
 </p>
 
 ## Repository Structure
